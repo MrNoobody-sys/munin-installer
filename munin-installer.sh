@@ -17,13 +17,13 @@ fi
         sleep 2
         sudo apt install munin munin-node
         clear
-        echo "Die Datei /etc/munin/apache24.conf wird angepasst"
+        echo "Config /etc/munin/apache24.conf now"
         sleep 2
         sudo mv apache24.conf /etc/munin/apache24.conf
         clear
         echo "The webserver and munin is restart now."
         sleep 2
-        sudo /etc/init.d/apache2 restart
         sudo sudo /etc/init.d/munin-node restart
+        sudo systemctl reload apache2.service
         clear
         echo "Ready, you can visit munin in <YOUR-IP>/munin/ "
