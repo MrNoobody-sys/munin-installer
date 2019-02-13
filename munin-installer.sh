@@ -2,17 +2,18 @@
         clear
         echo "Munin Installation wird gestartet..."
         sleep 2
-        read -p"Ist ein Webserver schon installier? (j/n)?" response
+        clear
+        read -p"Is a web server already installed? (y/n)?" response
 if [ "$response" == "n" ]; then
 
         clear
-        echo "Es wird nun ein Webserver (apache2) installiert"
+        echo "The webserver will now installed (apache2)"
         sleep 2
         sudo apt install apache2 -y
 
 fi
         clear
-        echo "Munin wird installiert"
+        echo "Munin is installed"
         sleep 2
         sudo apt install munin munin-node
         clear
@@ -20,9 +21,9 @@ fi
         sleep 2
         sudo mv apache24.conf /etc/munin/apache24.conf
         clear
-        echo "Der Webserver und Munin werden neu gestartet"
+        echo "The webserver and munin is restart now."
         sleep 2
         sudo /etc/init.d/apache2 restart
         sudo sudo /etc/init.d/munin-node restart
         clear
-        echo "Fertig, munin ist nun unter <DEINEDOMAIN>/munin/ erreichbar"
+        echo "Ready, you can visit munin in <YOUR-IP>/munin/ "
