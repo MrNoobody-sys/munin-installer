@@ -1,6 +1,6 @@
 #!/bin/bash
         clear
-        echo "Munin Installation wird gestartet..."
+        echo "Munin is installed..."
         sleep 2
         clear
         read -p"Is a web server already installed? (y/n)?" response
