@@ -3,7 +3,7 @@
         echo "Munin is installed..."
         sleep 2
         clear
-        read -p"A web server is needed.\nIs a web server installed? (y/n)?" response
+        read -p"A web server is needed.\n Is a web server installed? (y/n)?" response
 if [ "$response" == "n" ]; then
 
         clear
@@ -15,7 +15,7 @@ fi
         clear
         echo "Munin is installed"
         sleep 2
-        sudo apt install munin munin-node
+        sudo apt install munin munin-node -y
         clear
         echo "Config /etc/munin/apache24.conf now"
         sleep 2
