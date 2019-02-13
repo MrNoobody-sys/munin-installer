@@ -3,7 +3,7 @@
         echo "Munin is installed..."
         sleep 2
         clear
-        read -p"Is a web server already installed? (y/n)?" response
+        read -p"A web server is needed.\nIs a web server installed? (y/n)?" response
 if [ "$response" == "n" ]; then
 
         clear
